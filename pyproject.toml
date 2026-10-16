@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "free-bisc-hypersbl"
+version = "0.1.0"
+description = "Bilevel self-calibrating complex hyperspherical-harmonic sparse Bayesian EEG source inversion"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.14",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
